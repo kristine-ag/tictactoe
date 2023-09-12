@@ -43,7 +43,8 @@ btnRef.forEach((element) => {
 });
 
 const drawFunction = () => {
-  alert("Draw");
+  setTimeout(() => {
+      alert("Draw")}, 500)
 };
 
 restartBtn.addEventListener("click", () => {
@@ -78,8 +79,12 @@ const winChecker = () => {
 const winFunction = (letter, winningElements) => {
   if (letter == "X") {
     msgRef.innerHTML = "X is the winner";
+    setTimeout(() => {
+      alert("X is the winner")}, 500)
   } else {
     msgRef.innerHTML = "O is the winner";
+    setTimeout(() => {
+      alert("O is the winner")}, 500)
   }
   
   winningElements.forEach((index) => {
